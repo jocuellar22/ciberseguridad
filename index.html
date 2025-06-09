@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Defensor Cibernético</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="login-container">
+  <input type="text" id="player-name" placeholder="Ingresa tu nombre">
+  <button onclick="startGame()">Iniciar juego</button>
+</div>
+  <div class="game-container">
+    <h1><img src="logo.png" alt="Logo SENA" class="logo"> Defensor Cibernético</h1>
+    <div id="question-container">
+      <p id="question">Cargando pregunta...</p>
+      <div id="answers"></div>
+    </div>
+    <!--button id="next-btn" onclick="nextQuestion()">Siguiente</button-->
+    <button id="next-btn" onclick="nextQuestion()" style="display: none;">Siguiente</button>
+    <p id="score">Puntaje: 0</p>
+    <button id="reiniciar-btn" onclick="nuevoParticipante()" style="display: none;">
+    Iniciar juego para otro participante
+    </button>
+    <button id="ver-puntajes-btn" onclick="verPuntajes()" style="display: none;">Ver puntajes guardados</button>
+    <ul id="score-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
